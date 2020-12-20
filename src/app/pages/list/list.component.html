@@ -1,0 +1,6 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let hero of heroes">
+    <!-- Create a customized link using the data you get from the data -->
+    <a [routerLink]="['/hero', hero.id]">{{ hero.name }}</a>
+  </li>
+</ul>

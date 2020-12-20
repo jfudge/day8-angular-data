@@ -1,0 +1,7 @@
+<div class="container">
+  <app-header (dataEmitter)="captureEmittedData($event)" [title]="appTitle"></app-header>
+  <p class="lead">{{ childData }}</p>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
